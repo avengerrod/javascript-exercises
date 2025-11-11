@@ -1,9 +1,9 @@
-const removeFromArray = function(arr, find) {
+const removeFromArray = function(arr, ...find) {
   // create a new empty array
   const newArray = [];
     arr.forEach(element => {
-        if (element !== find) {
-        newArray.push(element);
+        if (!find.includes(element)) {
+          newArray.push(element);
         }
     });
     return newArray;
