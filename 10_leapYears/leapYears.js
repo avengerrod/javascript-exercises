@@ -1,8 +1,8 @@
 const leapYears = function(countYear) {
     if ((countYear % 4 === 0 && countYear % 100 !== 0) || (countYear % 400 === 0)) {
-        return countYear + ' is a leap year';
+        return true;
     } else {
-        return countYear + ' is a not leap year';
+        return false;
     }
 };
 
